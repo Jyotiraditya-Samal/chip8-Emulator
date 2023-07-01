@@ -33,10 +33,10 @@ int main(int argc, char **argv)
             case SDL_KEYDOWN:
             {
                 char key = event.key.keysym.sym;
-                int vkey = chip8_keyboard_map(keyboard_map, key); // translates physical to virtual key press
+                int vkey = chip8_keyboard_map(keyboard_map, key); // translated virtual key from physical key
                 if (vkey != -1)
                 {
-                    chip8_keyboard_down(keyboard_map, vkey)
+                    chip8_keyboard_down(&Chip8.KEYBOARD, vkey);
                 }
             }
             break;
@@ -44,10 +44,10 @@ int main(int argc, char **argv)
             case SDL_KEYUP:
             {
                 char key = event.key.keysym.sym;
-                int vkey = chip8_keyboard_map(keyboard_map, key); // translates physical to virtual key press
+                int vkey = chip8_keyboard_map(keyboard_map, key); // translated virtual key from physical key
                 if (vkey != -1)
                 {
-                    chip8_keyboard_up(keyboard_map, vkey)
+                    chip8_keyboard_up(&Chip8.KEYBOARD, vkey);
                 }
             }
             break;
