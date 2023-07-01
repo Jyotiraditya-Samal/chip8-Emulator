@@ -3,5 +3,25 @@
         "sdl.h": "c",
         "stdio.h": "c"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#76f8b9",
+        "activityBar.background": "#76f8b9",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#b267f7",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#76f8b9",
+        "statusBar.background": "#46f5a0",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#16f287",
+        "statusBarItem.remoteBackground": "#46f5a0",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#46f5a0",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#46f5a099",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#46f5a0"
 }
