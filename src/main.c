@@ -10,6 +10,7 @@ const char keyboard_map[CHIP8_TOTAL_KEYS] = {
 int main(int argc, char **argv)
 {
     struct chip8 Chip8;
+    chip8_init(&Chip8);
 
     SDL_Init(SDL_INIT_EVERYTHING);
     SDL_Window *window = SDL_CreateWindow( // Creates a Window
