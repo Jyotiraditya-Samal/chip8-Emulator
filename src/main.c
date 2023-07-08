@@ -12,7 +12,8 @@ int main(int argc, char **argv)
     struct chip8 Chip8;
     chip8_init(&Chip8);
 
-    // chip8_screen_set(&Chip8.SCREEN, 0, 0);
+    chip8_screen_clean(&Chip8.SCREEN);
+    chip8_screen_set(&Chip8.SCREEN, 10, 10);
 
     SDL_Init(SDL_INIT_EVERYTHING);
     SDL_Window *window = SDL_CreateWindow( // Creates a Window
@@ -70,8 +71,8 @@ int main(int argc, char **argv)
                     SDL_Rect rect;
                     rect.x = x * CHIP8_WINDOW_MULTIPLIER; // position x
                     rect.y = y * CHIP8_WINDOW_MULTIPLIER; // position y
-                    rect.h = 10;                          // size x
-                    rect.w = 10;                          // size y
+                    rect.h = CHIP8_WINDOW_MULTIPLIER;     // size x
+                    rect.w = CHIP8_WINDOW_MULTIPLIER;     // size y
                     SDL_RenderFillRect(renderer, &rect);
                 }
             }
